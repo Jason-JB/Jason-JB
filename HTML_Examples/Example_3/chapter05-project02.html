@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 5</title>
+   <link rel="stylesheet" href="chapter05-project02.css" />
+</head>
+<body>
+<form method="GET" action="http://www.randyconnolly.com/tests/process.php">
+    <fieldset>
+       <legend>Advanced Art Work Search</legend>
+
+        <div id="searchBox">
+		<input type="text" name="search" placeholder="Search Titles" size="50"/> Subject: 
+	<label class="radio-inline">
+      		<input type="radio" name="choice" checked>History
+    	</label>
+    	<label class="radio-inline">
+      		<input type="radio" name="choice">Person
+    	</label>
+    	<label class="radio-inline">
+      		<input type="radio" name="choice">Landscape
+    	</label>
+	<label class="select-inline">
+		<select name="choices">
+			<option value="0">Select Genre</option>
+			<option value="1">Baroque</option>
+			<option value="2">Renaissance</option>
+			<option value="3">Realism</option>
+		</select>
+	</label>
+		<button class="btn active" onclick="filterSelection('all')"> Filter</button>
+        </div>   
+        <div id="settingsBox">
+		<label class="select-inline">
+			<select name="actions">
+				<option value="0">Bulk Actions</option>
+				<option value="1">Archive</option>
+				<option value="2">Edit</option>
+				<option value="3">Delete</option>
+				<option value="4">Collection</option>
+			</select>
+			<button class="btn active" onclick="filterSelection('all')"> Apply to All</button>
+		</label>
+        </div>
+        <div id="paintingBox">
+		<h4>Paintings</h4>
+		<table>
+			<tr>		
+				<th>Title</th>
+				<th>Artist</th>
+				<th>Year</th>
+				<th>Genre</th>
+				<th>Actions</th>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name "index[]" value="10" />
+					<image src="images/05030.jpg" alt="img">
+					Death of Marat
+				</td>
+				<td>David, Jacques-Louis</td>
+				<td>1793</td>
+				<td>Romanticism</td>
+				<td>					
+					<button><input type="image" src="images/archive.png">
+					<button><input type="image" src="images/edit.png">
+					<button><input type="image" src="images/delete.png">
+					<button><input type="image" src="images/collection.png">
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<input type="checkbox" name "index[]" value="11" />
+					<image src="images/120010.jpg" alt="img">
+					Portrait of ELeanor of Toledo
+				</td>
+				<td>Bronzino, Agnolo</td>
+				<td>1545</td>
+				<td>Mannerism</td>
+				<td>					
+					<button><input type="image" src="images/archive.png">
+					<button><input type="image" src="images/edit.png">
+					<button><input type="image" src="images/delete.png">
+					<button><input type="image" src="images/collection.png">
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<input type="checkbox" name "index[]" value="12" />
+					<image src="images/07020.jpg" alt="img">
+					Liberty Leading the People
+				</td>
+				<td>Delacroix, Eugene</td>
+				<td>1830</td>
+				<td>Romanticism</td>
+				<td>					
+					<button><input type="image" src="images/archive.png">
+					<button><input type="image" src="images/edit.png">
+					<button><input type="image" src="images/delete.png">
+					<button><input type="image" src="images/collection.png">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<input type="checkbox" name "index[]" value="13" />
+					<image src="images/13030.jpg" alt="img">
+					Arangement in Grey and Black
+				</td>
+				<td>Whistler, James Abbott</td>
+				<td>1871</td>
+				<td>Realism</td>
+				<td>					
+					<button><input type="image" src="images/archive.png">
+					<button><input type="image" src="images/edit.png">
+					<button><input type="image" src="images/delete.png">
+					<button><input type="image" src="images/collection.png">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<input type="checkbox" name "index[]" value="14" />
+					<image src="images/06010.jpg" alt="img">
+					Mademoiselle Caroline Riviere
+				</td>
+				<td>Ingres, Jean-Auguste</td>
+				<td>1806</td>
+				<td>Neo-Classicism</td>
+				<td>
+					<button><input type="image" src="images/archive.png">
+					<button><input type="image" src="images/edit.png">
+					<button><input type="image" src="images/delete.png">
+					<button><input type="image" src="images/collection.png">
+				</td>
+			</tr>
+
+		</table>
+        </div> 
+    </fieldset>  
+</form>
+</body>
+</html>

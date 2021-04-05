@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 5</title>
+   <link rel="stylesheet" href="reset.css" />
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">       
+   <link rel="stylesheet" href="chapter05-project01.css" />
+</head>
+<body>
+
+    <section>
+         <h3>Data</h3>
+	 <h4>Orders</h4>
+         <table>
+		<tr>
+			<th>ID</td>
+			<th>Date</td>
+			<th>Customer</td>
+			<th>Country</td>
+			<th>Progress</td>
+			<th>Status</td>
+		</tr>
+		<tr>
+			<td>123</td>
+			<td>Sep 12, 2017</td>
+			<td>Jean Rousseau</td>
+			<td>France</td>
+			<td><progress value="100" max="100">100 %</progress></td>
+			<td><span class="status status-shipped">Shipped</status></td>
+		</tr>
+		<tr>
+			<td>144</td>
+			<td>Sep 20, 2017</td>
+			<td>Georg Hegel</td>
+			<td>Germany</td>
+			<td><progress value="100" max="100">100 %</progress></td>
+			<td><span class="status status-shipped">Shipped</status></td>
+		</tr>
+		<tr>
+			<td>149</td>
+			<td>Oct 3, 2017</td>
+			<td>John Locke</td>
+			<td>England</td>
+			<td><progress value="50" max="100">50 %</progress></td>
+			<td><span class="status status-processing">Processing</status></td>
+		</tr>
+		<tr>
+			<td>162</td>
+			<td>Oct 8, 2017</td>
+			<td>Thomas Hobbes</td>
+			<td>England</td>
+			<td><progress value="25" max="100">25 %</progress></td>
+			<td><span class="status status-pending">Pending</status></td>
+		</tr>
+		<tr>
+			<td>177</td>
+			<td>Oct 10, 2017</td>
+			<td>Johann Fichte</td>
+			<td>Germany</td>
+			<td><progress value="25" max="100">25 %</progress></td>
+			<td><span class="status status-pending">Pending</status></td>
+		</tr>
+		
+	 </table>
+       
+         
+    </section>
+    
+    <section>
+         <h3>Revise</h3>
+  
+
+	 <form method="POST" action="http://www.randyconnolly.com/tests/process.php">
+	 	<fieldset>
+			<legend>Filter Orders</legend>
+			<p>
+			   <label>Customer</label>
+				<input type="text" name="Enter Name" placeholder="Enter Name" />
+			</p>
+			<p>	
+			   <label>Country</label>
+				<select name="where">
+				<option>Choose a Country</option>
+				<option>France</option>
+				<option>Germany</option>
+				<option>England</option>
+				</select>
+			</p>
+			<p>
+			   <label>Status</label>
+			     	
+				<input type="radio" name="status" value="1">Pending</br>
+				<input type="radio" name="status" value="2">Processing</br>
+				<input type="radio" name="status" value="3">Shipped
+
+			</p>
+			<p>
+			   <label>Order Date</label>
+				<input type="date" name="Enter Date placeholder="mm/dd/yyyy" />
+			</p>
+			<input type="submit">
+	 	</fieldset>
+	 </form>
+
+    </section>    
+
+
+</body>
+</html>
